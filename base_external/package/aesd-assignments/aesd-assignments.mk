@@ -6,14 +6,14 @@
 ##############################################################
 
 #TODO: Fill up the contents below in order to reference your assignment 3 git contents
-AESD_ASSIGNMENTS_VERSION = '0c8b839bf5c8cbcbd8c70559f8121404600f7d82'
+AESD_ASSIGNMENTS_VERSION = '2cc82bf3000f178903d4252f6364862adf76fe34'
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
 AESD_ASSIGNMENTS_SITE = 'git@github.com:cu-ecen-aeld/assignments-3-and-later-TFNeto.git'
 AESD_ASSIGNMENTS_SITE_METHOD = git
 AESD_ASSIGNMENTS_GIT_SUBMODULES = YES
-AESD_ASSIGNMENTS_OVERRIDE_SRCDIR=/home/tiagoneto/Learning/assignment-1-TFNeto
+#AESD_ASSIGNMENTS_OVERRIDE_SRCDIR=/home/tiagoneto/Learning/assignment-1-TFNeto
 define AESD_ASSIGNMENTS_BUILD_CMDS
 	$(MAKE) $(TARGET_CONFIGURE_OPTS) CROSS_COMPILE=aarch64-none-linux-gnu- -C $(@D)/finder-app all 
 endef
