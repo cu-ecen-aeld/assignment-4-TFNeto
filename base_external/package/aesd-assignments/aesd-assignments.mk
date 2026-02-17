@@ -16,6 +16,8 @@ AESD_ASSIGNMENTS_GIT_SUBMODULES = YES
 #AESD_ASSIGNMENTS_OVERRIDE_SRCDIR=/home/tiagoneto/Learning/assignment-1-TFNeto
 define AESD_ASSIGNMENTS_BUILD_CMDS
 	$(MAKE) $(TARGET_CONFIGURE_OPTS) -C $(@D)/finder-app all 
+
+	$(MAKE) $(TARGET_CONFIGURE_OPTS) -C $(@D)/server clean 
 	$(MAKE) $(TARGET_CONFIGURE_OPTS) -C $(@D)/server all 
 endef
 
